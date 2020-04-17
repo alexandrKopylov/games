@@ -74,11 +74,7 @@ public class Logic {
 
         for ( int i =0; i<table.length; i++ ) {
             if ( table[i][i] ==1) {
-                if( monoHorizontal( table, i)) {
-                    result = true;
-                    break;
-                }
-                if( monoVertical( table, i)) {
+                if( monoHorizontal( table, i)  ||  monoVertical( table, i)) {
                     result = true;
                     break;
                 }
